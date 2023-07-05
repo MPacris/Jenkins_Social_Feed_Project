@@ -45,6 +45,16 @@ pipeline {
         stage ('Deploy New Image to AWS EC2'){
             steps {
                 sh 'echo "Deploying the image to AWS EC2..."'
+
+                sshagent(['social-feed-linux-kp-ssh-credentials']){
+                    sh """
+                        SSH_COMMAND="ssh -o StrictHostKeyChecking=no ubuntu@3.145.37.103"
+                        \$SSH_COMMAND "docker stop hosted-react-app && docker rm hsoted-react-app"
+                        \$SSH_COMMAND "docker pull mpacris/jenkins-social-feed:$BUILD_NUMBER"
+                        \$SSH_COMMAND "docker run -d -p 80:80 --name hosted-react-app mpacris/jenkins-social-feed:$BUILD_NUMBER" 
+
+                    """
+                }
             }
 
         }
