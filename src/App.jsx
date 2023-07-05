@@ -7,9 +7,18 @@ function App() {
   const [comments, setComments] = useState([
     {
       id: 1,
-      name: 'Meynard Pacris',
+      name: 'Meynard P',
       comment: 'This is my attempt at updating the code and pushing it through!',
       dateTime: '7/05/2023, 3:48:12 PM',
+      like: false,
+      dislike: false,
+    },
+
+    {
+      id: 2,
+      name: 'Meynard P',
+      comment: 'This is my second attempt updating the code to see if it pulls automatically!',
+      dateTime: '7/05/2023, 4:10:12 PM',
       like: false,
       dislike: false,
     },
