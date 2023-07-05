@@ -1,0 +1,49 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    
+}
+
+.form-top-container{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 1em;
+
+
+}
+
+.name-label, .comment-label {
+    display: flex;
+    align-items: flex-start;
+    vertical-align: top;
+    padding: 0.5em;
+    width: 80px; /* Adjust the width as needed */
+}
+
+
+
+.form-bottom-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 1em;
+
+}
+
+.form-button{
+    margin-left: auto;
+}
+
+.comment-box {
+    width: 350px;
+    height: 90px;
+}
+
+.name-box {
+    width: 350px;
+    height: 30px;
+
+}

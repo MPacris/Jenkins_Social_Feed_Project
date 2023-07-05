@@ -1,0 +1,34 @@
+.container-all{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+
+
+}
+
+.container-top{
+    border: solid;
+    background-color: white;
+    padding: 1em;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25%;
+    margin-left: 25%;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px lightgray;
+}
+
+.container-comments{
+    border: solid;
+    background-color: white;
+    padding: 1em;
+    margin-right: 25%;
+    margin-left: 25%;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px lightgray;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+}
+
